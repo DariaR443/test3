@@ -1,0 +1,82 @@
+ 
+<?php
+/**
+ * User: Daria Remizova 
+ */
+Nmmlm_Log_Logger::getLogger(__CLASS__)->warn("Praxigento_HhComposerModule01 is here (logged by Log4php).");
+?>
+<div>Block from "Praxigento_HhComposerModule01" is here.</div>
+ <?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Praxigento_HhComposerModule01>
+            <version>1.0.0</version>
+        </Praxigento_HhComposerModule01>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <Praxigento_HhComposerModule01>
+                    <file>praxigento/HhComposerModule01.xml</file>
+                </Praxigento_HhComposerModule01>
+            </updates>
+        </layout>
+    </frontend>
+</config>  
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Praxigento_HhComposerModule01>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Praxigento_HhComposerModule01>
+    </modules>
+</config>
+    {
+  "name": "praxigento/z_mage_composer_prj_01_full",
+  "version": "1.0.0",
+  "type": "magento-module",
+  "homepage": "https://github.com/test3",
+  "description": "Magento project with deployment script (composer.json) to test Magento Composer.",
+  "authors": [
+    {
+      "name": "Daria Remizova",
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*",
+    "magento-hackathon/composer-command-integrator": "*",
+    "magento/core": "1.9.1.0",
+    "magento-hackathon/hackathon_magemonitoring": "*",
+    "connect20/nmmlm_log": "*",
+    "praxigento/z_mage_composer_mod_01": "*",
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    },
+  ],
+  "extra": {
+    "magento-root-dir": "mage",
+    "magento-deploystrategy": "symlink",
+    "auto-append-gitignore": true
+  },
+  "minimum-stability": "dev"
+} 
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+    $ git clone git@github.com:praxigento/z_mage_composer_prj_01_full.git full
+$ cd full
+$ composer install
+$ path/to/file/in/module path/to/file/in/magento
+   $ for i in `find . -type f | grep -v \.git | grep -v "^.$" | grep -v "modman" | sed 's/\.\///'`; do echo ${i} ${i}; done > modman
+   $ ./vendor/bin/composerCommandIntegrator.php magento-module-deploy
+   {
+  "name": "praxigento/z_mage_composer_mod_01",
+  "config": {
+    "preferred-install": "source"
+  }
+}
