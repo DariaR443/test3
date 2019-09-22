@@ -1,0 +1,25 @@
+{
+  "name": "praxigento/z_mage_composer_mod_03",
+  "version": "1.0.0",
+  "type": "magento-module",
+  "license": "MIT",
+  "homepage": "https://github.com/praxigento/z_mage_composer_mod_03",
+  "description": "Magento module 03 for Composer tests.",
+  "authors": [
+    {
+      "name": "Daria Remizova"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://packages.firegento.com"
+    }
+  ],
+  "require": {
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "config": {
+    "preferred-install": "source"
+  }
+}
